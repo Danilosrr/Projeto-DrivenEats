@@ -1,0 +1,87 @@
+*{box-sizing: border-box;}
+body{background-color: #e5e5e5;}
+
+header{background-color: #CF2B2B;
+color: white;
+height: 92px;
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+.principal h1{margin-top: 92px;}
+
+header h1{font-family: 'Righteous', cursive;
+font-size: 44px;
+font-weight: 400;
+padding: 10px 0px 5px 21px;}
+header h2{font-family: 'Roboto', sans-serif;
+margin: 0px 21px;}
+
+main h1{padding: 25px 0px 15px 20px;
+font-family:'Roboto', sans-serif;
+font-weight: 400;
+font-size: 26px;
+color: #333333;}
+
+.pratos{display: flex;
+width: 100%;
+height: 230px;
+overflow-y: hidden;
+overflow-x: scroll;}
+
+.pratos::-webkit-scrollbar {display: none;}
+
+.pedidos{display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+padding: 10px;
+Width: 172px;
+Height: 216px;
+border-radius: 9px;
+margin:5px 15px;
+box-shadow: 3px 5px 6px 0px rgba(0, 0, 0,0.25);
+font-family: 'Roboto', sans-serif;
+background-color: white;}
+.pedidos img{width: 144px;
+height: 87px;
+border-radius: 4px;}
+.pedidos h3{font-size: 16px;
+font-weight: 700;}
+.pedidos p{font-size: 15px;
+font-weight: 300;
+color: #A6A6A6;
+margin: 0 15px;}
+.pedidos .preço{align-self: flex-start;
+margin: 0 15px;}
+
+.footer{display: flex;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+height: 92px;
+justify-content: center;
+align-items: center;
+background-color: white ;
+background-color: yellowgreen;}
+main{margin-bottom: 92px;}
+
+.confirmar{display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+width: 364px;
+height: 61px;
+padding: 20px;
+background-color:#CBCBCB;
+border-radius: 50px;}
+
+.confirmar p{font-family:'Roboto', sans-serif;
+text-align: center;
+align-self: center;
+font-size: 20px;
+font-weight: 400;
+color: white;}
