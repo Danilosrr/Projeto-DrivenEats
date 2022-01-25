@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style/style.css" rel="stylesheet"/>
     <link href="style/reset.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet"/>
+    <script type="text/javascript" src="functions.js"></script>
     <title>DrivenEats</title>
 </head>
 <body>
@@ -24,144 +24,99 @@
             <h1>Primeiro, seu prato</h1>
                 <div class="pratos">
                     
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
+                    <div id="salmao" class="pedidos" onclick="selecionado_salmao()">
+                        <img  src="imgs/salmao.jfif"/>
                         <h3>Salmão Grelhado</h3>
                         <p>Um pouco de cenoura, vagens e couve-flor</p>
                         <span class="preço">R$ 17,90</span>
                     </div>
 
-                    <div class="pedidos">
+                    <div id="frango" class="pedidos" onclick="selecionado_frango()">
                         <img src="imgs/Frango.jfif"/>
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <span class="preço">R$ 17,90</span>
                     </div>
 
-                    <div class="pedidos">
+                    <div id="bife" class="pedidos" onclick="selecionado_bife()">
                         <img src="imgs/Bife.jfif"/>
                         <h3>Bife com fritas</h3>
                         <p>Carne bovina, arroz feijão e salada</p>
                         <span class="preço">R$ 17,90</span>
                     </div>
 
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <span class="preço">R$ 17,90</span>
-                    </div>
-
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <span class="preço">R$ 17,90</span>
-                    </div>
-
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <span class="preço">R$ 17,90</span>
-                    </div>
                 </div>
         </section>
 
         <section class="bebidas">
             <h1>Agora, sua bebida</h1>
+
                 <div class="pratos">
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
+
+                    <div id="Coca" class="pedidos" onclick="selecionado_Coca()">
+                        <img src="imgs/Coca.jfif"/>
+                        <h3>Coca-cola</h3>
+                        <p>Coca-cola lata 350ml</p>
                         <span class="preço">R$ 17,90</span>
                     </div>
 
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
+                    <div id="Refri" class="pedidos" onclick="selecionado_Refri()">
+                        <img src="imgs/Refri.jfif"/>
+                        <h3>Guaraná</h3>
+                        <p>Guaraná lata 350ml</p>
                         <span class="preço">R$ 17,90</span>
                     </div>
 
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
+                    <div id="Sprite" class="pedidos" onclick="selecionado_Sprite()">
+                        <img src="imgs/Sprite.jfif"/>
+                        <h3>Sprite</h3>
+                        <p>Sprite lata 350ml</p>
                         <span class="preço">R$ 17,90</span>
                     </div>
 
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
+                    <div id="FantaLaranja" class="pedidos" onclick="selecionado_FantaLaranja()">
+                        <img src="imgs/Fanta-laranja.jfif"/>
+                        <h3>Fanta Laranja</h3>
+                        <p>Fanta laranja lata 350ml</p>
                         <span class="preço">R$ 17,90</span>
                     </div>
 
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
+                    <div id="FantaUva" class="pedidos" onclick="selecionado_FantaUva()">
+                        <img src="imgs/Fanta-uva.jfif"/>
+                        <h3>Fanta Uva</h3>
+                        <p>Fanta uva lata 350ml</p>
                         <span class="preço">R$ 17,90</span>
                     </div>
 
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <span class="preço">R$ 17,90</span>
-                    </div>
                 </div>
         </section>
 
         <section class="sobremesas">
             <h1>Por fim, sua sobremesa</h1>
                 <div class="pratos">
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
+                    <div id="Pudim" class="pedidos" onclick="selecionado_Pudim()">
+                        <img src="imgs/Pudim.jfif"/>
+                        <h3>Pudim</h3>
+                        <p>Pudim de leite condensado</p>
                         <span class="preço">R$ 17,90</span>
                     </div>
 
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
+                    <div id="Gelatina" class="pedidos" onclick="selecionado_Gelatina()">
+                        <img src="imgs/Gelatina.jfif"/>
+                        <h3>Gelatina Recheada</h3>
+                        <p>Gelatina com creme de leite</p>
                         <span class="preço">R$ 17,90</span>
                     </div>
 
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
+                    <div id="Mousse" class="pedidos" onclick="selecionado_Mousse()">
+                        <img src="imgs/Mousse.jfif"/>
+                        <h3>Mousse de chocolate</h3>
+                        <p>Mousse de chocolate com oreo</p>
                         <span class="preço">R$ 17,90</span>
                     </div>
 
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <span class="preço">R$ 17,90</span>
-                    </div>
-
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <span class="preço">R$ 17,90</span>
-                    </div>
-
-                    <div class="pedidos">
-                        <img src="imgs/salmao.jfif"/>
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <span class="preço">R$ 17,90</span>
-                    </div>
                 </div>
         </section>
-
 
     </main>
     <div class="footer">
