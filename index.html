@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet"/>
-    <script type="text/javascript" src="functions.js"></script>
+
     <title>DrivenEats</title>
 </head>
 <body>
@@ -120,9 +120,11 @@
 
     </main>
     <div class="footer">
-        <div class="confirmar"> 
-            <p>selecione os 3 itens para fechar o pedido</p>
-        </div>
-    </div>    
+        <button class="confirmar" id="botao" onmouseup="botao()" disabled>  
+            <p id="btntext">selecione os 3 itens para fechar o pedido</p>
+        </button>
+    </div>   
+    
+    <script type="text/javascript" src="functions.js"></script>
 </body>
 </html>

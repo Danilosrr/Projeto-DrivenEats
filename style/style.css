@@ -67,7 +67,7 @@ height: 92px;
 justify-content: center;
 align-items: center;
 background-color: white ;
-background-color: yellowgreen;}
+box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);}
 main{margin-bottom: 92px;}
 
 .confirmar{display: flex;
