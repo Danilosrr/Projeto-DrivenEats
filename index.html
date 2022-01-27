@@ -29,6 +29,7 @@
                         <h3>Salmão Grelhado</h3>
                         <p>Um pouco de cenoura, vagens e couve-flor</p>
                         <div class="conta" class="preço">R$ 19,99</div class="conta">
+                        <ion-icon id="salmaocheck" name="checkmark-circle"></ion-icon>
                     </div>
 
                     <div id="frango" class="pedidos" onclick="selecionado_frango()">
@@ -36,6 +37,7 @@
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <div class="conta" class="preço">R$ 14,99</div class="conta">
+                        <ion-icon id="frangocheck" name="checkmark-circle"></ion-icon>
                     </div>
 
                     <div id="bife" class="pedidos" onclick="selecionado_bife()">
@@ -43,6 +45,7 @@
                         <h3>Bife com fritas</h3>
                         <p>Carne bovina, arroz feijão e salada</p>
                         <div class="conta" class="preço">R$ 17,99</div class="conta">
+                        <ion-icon id="bifecheck" name="checkmark-circle"></ion-icon>    
                     </div>
 
                 </div>
@@ -58,6 +61,7 @@
                         <h3>Coca-cola</h3>
                         <p>Coca-cola lata 350ml</p>
                         <div class="conta" class="preço">R$ 4,99</div class="conta">
+                        <ion-icon id="Cocacheck" name="checkmark-circle"></ion-icon>    
                     </div>
 
                     <div id="Refri" class="pedidos" onclick="selecionado_Refri()">
@@ -65,6 +69,7 @@
                         <h3>Guaraná</h3>
                         <p>Guaraná lata 350ml</p>
                         <div class="conta" class="preço">R$ 4,99</div class="conta">
+                        <ion-icon id="Refricheck" name="checkmark-circle"></ion-icon>
                     </div>
 
                     <div id="Sprite" class="pedidos" onclick="selecionado_Sprite()">
@@ -72,6 +77,7 @@
                         <h3>Sprite</h3>
                         <p>Sprite lata 350ml</p>
                         <div class="conta" class="preço">R$ 4,99</div class="conta">
+                        <ion-icon id="Spritecheck" name="checkmark-circle"></ion-icon>
                     </div>
 
                     <div id="FantaLaranja" class="pedidos" onclick="selecionado_FantaLaranja()">
@@ -79,6 +85,7 @@
                         <h3>Fanta Laranja</h3>
                         <p>Fanta laranja lata 350ml</p>
                         <div class="conta" class="preço">R$ 4,99</div class="conta">
+                        <ion-icon id="FantaLaranjacheck" name="checkmark-circle"></ion-icon>
                     </div>
 
                     <div id="FantaUva" class="pedidos" onclick="selecionado_FantaUva()">
@@ -86,6 +93,7 @@
                         <h3>Fanta Uva</h3>
                         <p>Fanta uva lata 350ml</p>
                         <div class="conta" class="preço">R$ 4,99</div class="conta">
+                        <ion-icon id="FantaUvacheck" name="checkmark-circle"></ion-icon>
                     </div>
 
                 </div>
@@ -101,6 +109,7 @@
                         <h3>Pudim</h3>
                         <p>Pudim de leite condensado</p>
                         <div class="conta" class="preço">R$ 6,99</div class="conta">
+                        <ion-icon id="Pudimcheck" name="checkmark-circle"></ion-icon>
                     </div>
 
                     <div id="Gelatina" class="pedidos" onclick="selecionado_Gelatina()">
@@ -108,6 +117,7 @@
                         <h3>Gelatina Recheada</h3>
                         <p>Gelatina com creme de leite</p>
                         <div class="conta" class="preço">R$ 5,99</div class="conta">
+                        <ion-icon id="Gelatinacheck" name="checkmark-circle"></ion-icon>
                     </div>
 
                     <div id="Mousse" class="pedidos" onclick="selecionado_Mousse()">
@@ -115,6 +125,7 @@
                         <h3>Mousse de chocolate</h3>
                         <p>Mousse de chocolate com oreo</p>
                         <div class="conta" class="preço">R$ 6,99</div class="conta">
+                        <ion-icon id="Moussecheck" name="checkmark-circle"></ion-icon>
                     </div>
 
                 </div>
@@ -163,18 +174,20 @@
         </div>
 
         <div class="conta">
-            <div><h3 id="ref_sobremesa"></h3></div>
+            <h3 id="ref_sobremesa">
+            </h3>
 
-             <div><h3 id="ref_preco3"></h3></div>
+            <h3 id="ref_preco3">
+            </h3>
         </div>
 
         <div class="conta">
-            <div><h3>total:</h3></div>
+            <p>total:</p>
             
-            <div><h3 id="precototal"></h3></div>
+            <p id="precototal"></p>
         </div>  
 
-        <button class="confirmar" id="PodePedir" onclick="">
+        <button class="confirmar" id="PodePedir" onclick="PedidoZap()">
             <p>Tudo certo, pode pedir!</p>
         </button>
         <button class="cancelar" id="CancelarPedido" onclick="CancelarPedido()">
@@ -183,7 +196,8 @@
         
     </div>
     
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="functions.js"></script>
 </body>
 </html>

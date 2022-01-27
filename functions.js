@@ -17,7 +17,11 @@ let precototal;
         document.getElementById("bife").style.borderStyle="hidden";
         document.getElementById("salmao").style.borderStyle="hidden";
       
-        prato = 'frango';
+        document.getElementById("frangocheck").style.display='flex';
+        document.getElementById("bifecheck").style.display='none';
+        document.getElementById("salmaocheck").style.display='none';
+
+        prato = 'Frango Yin Yang';
         preco1 = 14.99;
 
         
@@ -35,9 +39,13 @@ let precototal;
         document.getElementById("frango").style.borderStyle="hidden";
         document.getElementById("bife").style.borderStyle="solid";
         document.getElementById("salmao").style.borderStyle="hidden";
+
+        document.getElementById("frangocheck").style.display='none';
+        document.getElementById("bifecheck").style.display='flex';
+        document.getElementById("salmaocheck").style.display='none';
       
-         prato = 'bife';
-         preco1 = 17.99;
+        prato = 'Bife com fritas';
+        preco1 = 17.99;
 
          
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
@@ -54,9 +62,13 @@ let precototal;
         document.getElementById("frango").style.borderStyle="hidden";
         document.getElementById("bife").style.borderStyle="hidden";
         document.getElementById("salmao").style.borderStyle="solid";
+
+        document.getElementById("frangocheck").style.display='none';
+        document.getElementById("bifecheck").style.display='none';
+        document.getElementById("salmaocheck").style.display='flex';
       
-         prato = 'salmao';
-         preco1 = 19.99;
+        prato = 'Salmao grelhado';
+        preco1 = 19.99;
 
          
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
@@ -78,8 +90,14 @@ function selecionado_Coca(){
     document.getElementById("FantaLaranja").style.borderStyle="hidden";
     document.getElementById("FantaUva").style.borderStyle="hidden";
 
-     bebida = 'coca';
-     preco2 = 4.99; 
+    document.getElementById("Cocacheck").style.display='flex';
+    document.getElementById("Refricheck").style.display='none';
+    document.getElementById("Spritecheck").style.display='none';
+    document.getElementById("FantaLaranjacheck").style.display='none';
+    document.getElementById("FantaUvacheck").style.display='none';
+
+    bebida = 'Coca';
+    preco2 = 4.99; 
 
      
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
@@ -100,8 +118,14 @@ function selecionado_Refri(){
     document.getElementById("FantaLaranja").style.borderStyle="hidden";
     document.getElementById("FantaUva").style.borderStyle="hidden";
 
-     bebida = 'guarana';
-     preco2 = 4.99; 
+    document.getElementById("Cocacheck").style.display='none';
+    document.getElementById("Refricheck").style.display='flex';
+    document.getElementById("Spritecheck").style.display='none';
+    document.getElementById("FantaLaranjacheck").style.display='none';
+    document.getElementById("FantaUvacheck").style.display='none';
+
+    bebida = 'Guaraná';
+    preco2 = 4.99; 
 
      
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
@@ -122,11 +146,17 @@ function selecionado_Sprite(){
     document.getElementById("FantaLaranja").style.borderStyle="hidden";
     document.getElementById("FantaUva").style.borderStyle="hidden";
 
-     bebida = 'sprite';
-     preco2 = 4.99; 
+    document.getElementById("Cocacheck").style.display='none';
+    document.getElementById("Refricheck").style.display='none';
+    document.getElementById("Spritecheck").style.display='flex';
+    document.getElementById("FantaLaranjacheck").style.display='none';
+    document.getElementById("FantaUvacheck").style.display='none';
+
+    bebida = 'Sprite';
+    preco2 = 4.99; 
 
 
-     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
+    if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
         document.getElementById('BotaoItens').style.background="#32B72F";
         document.getElementById("BotaoItens").disabled = false;
@@ -142,9 +172,15 @@ function selecionado_FantaLaranja(){
     document.getElementById("Sprite").style.borderStyle="hidden";
     document.getElementById("FantaLaranja").style.borderStyle="solid";
     document.getElementById("FantaUva").style.borderStyle="hidden";
+
+    document.getElementById("Cocacheck").style.display='none';
+    document.getElementById("Refricheck").style.display='none';
+    document.getElementById("Spritecheck").style.display='none';
+    document.getElementById("FantaLaranjacheck").style.display='flex';
+    document.getElementById("FantaUvacheck").style.display='none';
   
-     bebida = 'fanta laranja';
-     preco2 = 4.99; 
+    bebida = 'Fanta laranja';
+    preco2 = 4.99; 
 
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
@@ -162,9 +198,15 @@ function selecionado_FantaUva(){
     document.getElementById("Sprite").style.borderStyle="hidden";
     document.getElementById("FantaLaranja").style.borderStyle="hidden";
     document.getElementById("FantaUva").style.borderStyle="solid";
+
+    document.getElementById("Cocacheck").style.display='none';
+    document.getElementById("Refricheck").style.display='none';
+    document.getElementById("Spritecheck").style.display='none';
+    document.getElementById("FantaLaranjacheck").style.display='none';
+    document.getElementById("FantaUvacheck").style.display='flex';
   
-     bebida = 'fanta uva';
-     preco2 = 4.99; 
+    bebida = 'Fanta uva';
+    preco2 = 4.99; 
      
 
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
@@ -184,8 +226,12 @@ function selecionado_Pudim(){
     document.getElementById("Gelatina").style.borderStyle="hidden";
     document.getElementById("Mousse").style.borderStyle="hidden";
 
-     sobremesa = 'pudim';
-     preco3 = 6.99; 
+    document.getElementById("Pudimcheck").style.display='flex';
+    document.getElementById("Gelatinacheck").style.display='none';
+    document.getElementById("Moussecheck").style.display='none';
+
+    sobremesa = 'Pudim';
+    preco3 = 6.99; 
   
      
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
@@ -203,8 +249,12 @@ function selecionado_Gelatina(){
     document.getElementById("Gelatina").style.borderStyle="solid";
     document.getElementById("Mousse").style.borderStyle="hidden";
 
-     sobremesa = 'gelatina';
-     preco3 = 5.99; 
+    document.getElementById("Pudimcheck").style.display='none';
+    document.getElementById("Gelatinacheck").style.display='flex';
+    document.getElementById("Moussecheck").style.display='none';
+
+    sobremesa = 'Gelatina';
+    preco3 = 5.99; 
 
      
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
@@ -222,8 +272,12 @@ function selecionado_Mousse(){
     document.getElementById("Gelatina").style.borderStyle="hidden";
     document.getElementById("Mousse").style.borderStyle="solid";
 
-     sobremesa = 'mousse';
-     preco3 = 6.99; 
+    document.getElementById("Pudimcheck").style.display='none';
+    document.getElementById("Gelatinacheck").style.display='none';
+    document.getElementById("Moussecheck").style.display='flex';
+
+    sobremesa = 'Mousse';
+    preco3 = 6.99; 
 
 
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
@@ -305,4 +359,21 @@ function pedirDados() {
 
     document.getElementById("precototal").innerHTML='R$ ' + parseFloat(preco1+preco2+preco3);
 
+  }
+
+  function PedidoZap(){
+
+    let mensagem;
+
+    mensagem = 
+    "Olá, gostaria de fazer o pedido:\n"+
+    "- Prato: " +prato+"\n"+
+    "- Bebida: " +bebida+"\n"+
+    "- Sobremesa: " +sobremesa+"\n"+
+    "Total: R$ " + parseFloat(preco1+preco2+preco3)+"\n"+
+    "Neste endereço: " + endereco +"\n"+
+    "Meu nome é: " + nome;
+
+
+    window.open("https://wa.me/558398817547?text="+encodeURIComponent(mensagem));
   }
