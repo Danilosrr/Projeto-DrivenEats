@@ -118,12 +118,27 @@
                 </div>
         </section>
 
+        <div class="footer">
+            <button class="confirmar" id="BotaoItens" onclick="pedirDados()" disabled>  
+                <p id="btn1text">selecione os 3 itens para fechar o pedido</p>
+            </button>
+        </div>   
+
     </main>
-    <div class="footer">
-        <button class="confirmar" id="botao" onmouseup="botao()" disabled>  
-            <p id="btntext">selecione os 3 itens para fechar o pedido</p>
+
+    <div class="pedido" id="Dados">
+
+        <p>Confirme seu nome e endereço</p>
+        <input id="InputNome" type="text" placeholder="seu nome" onkeyup="Nome()">
+        <input id='InputEndereco' type="text" placeholder="seu endereço" onkeyup="Endereco()">
+        <button class="confirmar" id="BotaoDados"  disabled >
+            <p id="btn2text">Preencher</p>
         </button>
-    </div>   
+        <button class="cancelar" id="BotaoDados" onclick="pedirDados()">
+            <p>Cancelar</p>
+        </button>
+        
+    </div>
     
     <script type="text/javascript" src="functions.js"></script>
 </body>

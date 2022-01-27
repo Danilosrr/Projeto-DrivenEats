@@ -3,6 +3,9 @@
 let prato
 let bebida
 let sobremesa
+let endereco
+let nome
+
 
     function selecionado_frango(){
     
@@ -15,9 +18,9 @@ let sobremesa
         
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
-        document.getElementById('botao').style.background="green";
-        document.getElementById("botao").disabled = false;
-        document.getElementById('btntext').textContent = 'Fechar pedido'
+        document.getElementById('BotaoItens').style.background="#32B72F";
+        document.getElementById("BotaoItens").disabled = false;
+        document.getElementById('btn1text').textContent = 'Fechar pedido';
        
     }
     };
@@ -32,9 +35,9 @@ let sobremesa
          
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
-        document.getElementById('botao').style.background="green";
-        document.getElementById("botao").disabled = false;
-        document.getElementById('btntext').textContent = 'Fechar pedido'
+        document.getElementById('BotaoItens').style.background="#32B72F";
+        document.getElementById("BotaoItens").disabled = false;
+        document.getElementById('btn1text').textContent = 'Fechar pedido';
        
     }
     };
@@ -49,9 +52,9 @@ let sobremesa
          
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
-        document.getElementById('botao').style.background="green";
-        document.getElementById("botao").disabled = false;
-        document.getElementById('btntext').textContent = 'Fechar pedido'
+        document.getElementById('BotaoItens').style.background="#32B72F";
+        document.getElementById("BotaoItens").disabled = false;
+        document.getElementById('btn1text').textContent = 'Fechar pedido';
        
     }
     };
@@ -72,9 +75,9 @@ function selecionado_Coca(){
      
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
-        document.getElementById('botao').style.background="green";
-        document.getElementById("botao").disabled = false;
-        document.getElementById('btntext').textContent = 'Fechar pedido'
+        document.getElementById('BotaoItens').style.background="#32B72F";
+        document.getElementById("BotaoItens").disabled = false;
+        document.getElementById('btn1text').textContent = 'Fechar pedido';
        
        
     }
@@ -93,9 +96,9 @@ function selecionado_Refri(){
      
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
-        document.getElementById('botao').style.background="green";
-        document.getElementById("botao").disabled = false;
-        document.getElementById('btntext').textContent = 'Fechar pedido'
+        document.getElementById('BotaoItens').style.background="#32B72F";
+        document.getElementById("BotaoItens").disabled = false;
+        document.getElementById('btn1text').textContent = 'Fechar pedido';
        
        
     }
@@ -114,9 +117,9 @@ function selecionado_Sprite(){
 
      if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
-        document.getElementById('botao').style.background="green";
-        document.getElementById("botao").disabled = false;
-        document.getElementById('btntext').textContent = 'Fechar pedido'
+        document.getElementById('BotaoItens').style.background="#32B72F";
+        document.getElementById("BotaoItens").disabled = false;
+        document.getElementById('btn1text').textContent = 'Fechar pedido';
        
     }
 };
@@ -133,9 +136,9 @@ function selecionado_FantaLaranja(){
 
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
-        document.getElementById('botao').style.background="green";
-        document.getElementById("botao").disabled = false;
-        document.getElementById('btntext').textContent = 'Fechar pedido'
+        document.getElementById('BotaoItens').style.background="#32B72F";
+        document.getElementById("BotaoItens").disabled = false;
+        document.getElementById('btn1text').textContent = 'Fechar pedido';
        
     }
 };
@@ -154,9 +157,9 @@ function selecionado_FantaUva(){
 
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
-        document.getElementById('botao').style.background="green";
-        document.getElementById("botao").disabled = false;
-        document.getElementById('btntext').textContent = 'Fechar pedido'
+        document.getElementById('BotaoItens').style.background="#32B72F";
+        document.getElementById("BotaoItens").disabled = false;
+        document.getElementById('btn1text').textContent = 'Fechar pedido';
        
     }
 };
@@ -175,9 +178,9 @@ function selecionado_Pudim(){
      
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
-        document.getElementById('botao').style.background="green";
-        document.getElementById("botao").disabled = false;
-        document.getElementById('btntext').textContent = 'Fechar pedido'
+        document.getElementById('BotaoItens').style.background="#32B72F";
+        document.getElementById("BotaoItens").disabled = false;
+        document.getElementById('btn1text').textContent = 'Fechar pedido';
 
     }
 };
@@ -193,9 +196,9 @@ function selecionado_Gelatina(){
      
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
-        document.getElementById('botao').style.background="green";
-        document.getElementById("botao").disabled = false;
-        document.getElementById('btntext').textContent = 'Fechar pedido'
+        document.getElementById('BotaoItens').style.background="#32B72F";
+        document.getElementById("BotaoItens").disabled = false;
+        document.getElementById('btn1text').textContent = 'Fechar pedido';
 
     }
 };
@@ -211,9 +214,41 @@ function selecionado_Mousse(){
 
     if (prato != undefined && bebida != undefined && sobremesa !=undefined){
         
-        document.getElementById('botao').style.background="green";
-        document.getElementById("botao").disabled = false;
-        document.getElementById('btntext').textContent = 'Fechar pedido'
+        document.getElementById('BotaoItens').style.background= '#32B72F';
+        document.getElementById("BotaoItens").disabled = false;
+        document.getElementById('btn1text').textContent = 'Fechar pedido';
 
     }
 };
+
+function Endereco(){
+
+    endereco = document.getElementById('InputEndereco').value;
+
+    if(endereco != undefined && nome != undefined){
+        document.getElementById('btn2text').textContent = 'Confirmar';
+        document.getElementById('BotaoDados').style.background= '#32B72F';
+        document.getElementById('BotaoDados').disabled = false;
+    }
+}
+
+function Nome(){
+
+    nome = document.getElementById('InputNome').value;
+
+    if(endereco != undefined && nome != undefined){
+        document.getElementById('btn2text').textContent = 'Confirmar';
+        document.getElementById('BotaoDados').style.background= '#32B72F';
+        document.getElementById('BotaoDados').disabled = false;
+    }
+}
+
+
+function pedirDados() {
+    var x = document.getElementById("Dados");
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
+  }
