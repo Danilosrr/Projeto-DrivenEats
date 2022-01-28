@@ -317,38 +317,24 @@ function Nome(){
 
 function pedirDados() {
    
-    if (document.getElementById("Dados").style.display === "none") {
-      document.getElementById("Dados").style.display = "flex";
-      document.getElementById("corpo").style.filter = "opacity(50%)";
-      document.getElementById("footer").style.display = "none";
-    } else {
-        document.getElementById("Dados").style.display = "none";
-        document.getElementById("corpo").style.filter = "none";
-        document.getElementById("footer").style.display = "flex";
-    }
+    document.querySelector("#Dados").classList.toggle("escondido");
+    
+    document.querySelector("main").style.opacity = 0.5;
 
   }
 
+function cancelarDados(){
 
-  function CancelarPedido() {
+    document.querySelector("#Dados").classList.toggle("escondido");
+    
+    document.querySelector("main").style.opacity = 1.0;
 
-    if (document.getElementById("ConfirmePedido").style.display === "flex") {
-        document.getElementById("ConfirmePedido").style.display = "none";
-        document.getElementById("footer").style.display = "flex";
-        document.getElementById("corpo").style.filter = "none"
-      }
+}
 
-  }
+function ConfirmarPedido() {
 
-  function ConfirmarPedido() {
-
-    if (document.getElementById("Dados").style.display === "flex") {
-        document.getElementById("Dados").style.display = "none";
-        document.getElementById("ConfirmePedido").style.display = "flex";
-      } else {
-          document.getElementById("Dados").style.display = "flex";
-          document.getElementById("ConfirmePedido").style.filter = "none";
-      }
+    document.querySelector("#Dados").classList.toggle("escondido");
+    document.querySelector("#ConfirmePedido").classList.toggle("escondido");
 
     document.getElementById("ref_prato").innerHTML=prato;
     document.getElementById("ref_bebida").innerHTML=bebida;
@@ -361,7 +347,17 @@ function pedirDados() {
 
   }
 
-  function PedidoZap(){
+function CancelarZap() {
+
+    
+    
+    document.querySelector("main").style.opacity = 1.0;
+
+    document.querySelector("#ConfirmePedido").classList.toggle("escondido");
+    
+  }
+
+function PedidoZap(){
 
     let mensagem;
 

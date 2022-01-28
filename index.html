@@ -14,37 +14,40 @@
 </head>
 <body>
 
-    <header>
-        <h1>DrivenEats</h1>
-        <h2>sua comida em 6 minutos</h2>
-    </header>
+
 
     <main id="corpo">
+        
+        <div class="header">
+            <h1>DrivenEats</h1>
+            <h2>sua comida em 6 minutos</h2>
+        </div>
+
         <section class="principal">
             <h1>Primeiro, seu prato</h1>
                 <div class="pratos">
                     
-                    <div id="salmao" class="pedidos" onclick="selecionado_salmao()">
+                    <div id="salmao" class="pedidos" data-identifier="food-option" onclick="selecionado_salmao()">
                         <img  src="imgs/salmao.jfif"/>
                         <h3>Salmão Grelhado</h3>
                         <p>Um pouco de cenoura, vagens e couve-flor</p>
-                        <div class="conta" class="preço">R$ 19,99</div class="conta">
+                        <div class="preço">R$ 19,99</div>
                         <ion-icon id="salmaocheck" name="checkmark-circle"></ion-icon>
                     </div>
 
-                    <div id="frango" class="pedidos" onclick="selecionado_frango()">
+                    <div id="frango" class="pedidos" data-identifier="food-option" onclick="selecionado_frango()">
                         <img src="imgs/Frango.jfif"/>
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
-                        <div class="conta" class="preço">R$ 14,99</div class="conta">
+                        <div class="preço">R$ 14,99</div>
                         <ion-icon id="frangocheck" name="checkmark-circle"></ion-icon>
                     </div>
 
-                    <div id="bife" class="pedidos" onclick="selecionado_bife()">
+                    <div id="bife" class="pedidos" data-identifier="food-option" onclick="selecionado_bife()">
                         <img src="imgs/Bife.jfif"/>
                         <h3>Bife com fritas</h3>
                         <p>Carne bovina, arroz feijão e salada</p>
-                        <div class="conta" class="preço">R$ 17,99</div class="conta">
+                        <div class="preço">R$ 17,99</div>
                         <ion-icon id="bifecheck" name="checkmark-circle"></ion-icon>    
                     </div>
 
@@ -56,43 +59,43 @@
 
                 <div class="pratos">
 
-                    <div id="Coca" class="pedidos" onclick="selecionado_Coca()">
+                    <div id="Coca" class="pedidos" data-identifier="drink-option" onclick="selecionado_Coca()">
                         <img src="imgs/Coca.jfif"/>
                         <h3>Coca-cola</h3>
                         <p>Coca-cola lata 350ml</p>
-                        <div class="conta" class="preço">R$ 4,99</div class="conta">
+                        <div class="preço">R$ 4,99</div>
                         <ion-icon id="Cocacheck" name="checkmark-circle"></ion-icon>    
                     </div>
 
-                    <div id="Refri" class="pedidos" onclick="selecionado_Refri()">
+                    <div id="Refri" class="pedidos" data-identifier="drink-option" onclick="selecionado_Refri()">
                         <img src="imgs/Refri.jfif"/>
                         <h3>Guaraná</h3>
                         <p>Guaraná lata 350ml</p>
-                        <div class="conta" class="preço">R$ 4,99</div class="conta">
+                        <div class="preço">R$ 4,99</div>
                         <ion-icon id="Refricheck" name="checkmark-circle"></ion-icon>
                     </div>
 
-                    <div id="Sprite" class="pedidos" onclick="selecionado_Sprite()">
+                    <div id="Sprite" class="pedidos" data-identifier="drink-option" onclick="selecionado_Sprite()">
                         <img src="imgs/Sprite.jfif"/>
                         <h3>Sprite</h3>
                         <p>Sprite lata 350ml</p>
-                        <div class="conta" class="preço">R$ 4,99</div class="conta">
+                        <div class="preço">R$ 4,99</div>
                         <ion-icon id="Spritecheck" name="checkmark-circle"></ion-icon>
                     </div>
 
-                    <div id="FantaLaranja" class="pedidos" onclick="selecionado_FantaLaranja()">
+                    <div id="FantaLaranja" class="pedidos" data-identifier="drink-option" onclick="selecionado_FantaLaranja()">
                         <img src="imgs/Fanta-laranja.jfif"/>
                         <h3>Fanta Laranja</h3>
                         <p>Fanta laranja lata 350ml</p>
-                        <div class="conta" class="preço">R$ 4,99</div class="conta">
+                        <div class="preço">R$ 4,99</div>
                         <ion-icon id="FantaLaranjacheck" name="checkmark-circle"></ion-icon>
                     </div>
 
-                    <div id="FantaUva" class="pedidos" onclick="selecionado_FantaUva()">
+                    <div id="FantaUva" class="pedidos" data-identifier="drink-option" onclick="selecionado_FantaUva()">
                         <img src="imgs/Fanta-uva.jfif"/>
                         <h3>Fanta Uva</h3>
                         <p>Fanta uva lata 350ml</p>
-                        <div class="conta" class="preço">R$ 4,99</div class="conta">
+                        <div class="preço">R$ 4,99</div>
                         <ion-icon id="FantaUvacheck" name="checkmark-circle"></ion-icon>
                     </div>
 
@@ -102,58 +105,60 @@
         <section class="sobremesas">
             <h1>Por fim, sua sobremesa</h1>
 
-                <div class="pratos">
+                <div class="pratos" id="pratosBottom">
 
-                    <div id="Pudim" class="pedidos" onclick="selecionado_Pudim()">
+                    <div id="Pudim" class="pedidos" data-identifier="dessert-option" onclick="selecionado_Pudim()">
                         <img src="imgs/Pudim.jfif"/>
                         <h3>Pudim</h3>
                         <p>Pudim de leite condensado</p>
-                        <div class="conta" class="preço">R$ 6,99</div class="conta">
+                        <div class="preço">R$ 6,99</div>
                         <ion-icon id="Pudimcheck" name="checkmark-circle"></ion-icon>
                     </div>
 
-                    <div id="Gelatina" class="pedidos" onclick="selecionado_Gelatina()">
+                    <div id="Gelatina" class="pedidos" data-identifier="dessert-option" onclick="selecionado_Gelatina()">
                         <img src="imgs/Gelatina.jfif"/>
                         <h3>Gelatina Recheada</h3>
                         <p>Gelatina com creme de leite</p>
-                        <div class="conta" class="preço">R$ 5,99</div class="conta">
+                        <div class="preço">R$ 5,99</div>
                         <ion-icon id="Gelatinacheck" name="checkmark-circle"></ion-icon>
                     </div>
 
-                    <div id="Mousse" class="pedidos" onclick="selecionado_Mousse()">
+                    <div id="Mousse" class="pedidos" data-identifier="dessert-option" onclick="selecionado_Mousse()">
                         <img src="imgs/Mousse.jfif"/>
                         <h3>Mousse de chocolate</h3>
                         <p>Mousse de chocolate com oreo</p>
-                        <div class="conta" class="preço">R$ 6,99</div class="conta">
+                        <div class="preço">R$ 6,99</div>
                         <ion-icon id="Moussecheck" name="checkmark-circle"></ion-icon>
                     </div>
 
                 </div>
         </section>
 
-        <div id="footer">
+        <footer>
             <button class="confirmar" id="BotaoItens" onclick="pedirDados()" disabled>  
                 <p id="btn1text">selecione os 3 itens para fechar o pedido</p>
             </button>
-        </div>   
+        </footer>   
 
     </main>
 
-    <div class="pedido" id="Dados">
+    <div class="pedido escondido" id="Dados">
 
         <p>Confirme seu nome e endereço</p>
-        <input id="InputNome" type="text" placeholder="seu nome" onkeyup="Nome()">
-        <input id='InputEndereco' type="text" placeholder="seu endereço" onkeyup="Endereco()">
+        <div class="dados" data-identifier="person">
+            <input id="InputNome" type="text" placeholder="seu nome" onkeyup="Nome()">
+            <input id='InputEndereco' type="text" placeholder="seu endereço" onkeyup="Endereco()">
+        </div>
         <button class="confirmar" id="BotaoDados" onclick="ConfirmarPedido()" disabled >
             <p id="btn2text">Preencher</p>
         </button>
-        <button class="cancelar" id="BotaoDados" onclick="pedirDados()">
+        <button class="cancelar" id="BotaoDados" onclick="cancelarDados()">
             <p>Cancelar</p>
         </button>
         
     </div>
 
-    <div class="pedido" id="ConfirmePedido">
+    <div class="pedido escondido" id="ConfirmePedido">
 
         <p>Confirme seu pedido</p>
 
@@ -190,7 +195,7 @@
         <button class="confirmar" id="PodePedir" onclick="PedidoZap()">
             <p>Tudo certo, pode pedir!</p>
         </button>
-        <button class="cancelar" id="CancelarPedido" onclick="CancelarPedido()">
+        <button class="cancelar" id="CancelarPedido" onclick="CancelarZap()">
             <p>Cancelar</p>
         </button>
         
